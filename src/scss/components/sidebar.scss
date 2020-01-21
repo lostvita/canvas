@@ -1,0 +1,106 @@
+.sidebar{
+    ::-webkit-scrollbar-thumb{
+        border-radius: 4px;
+        background: rgba(0,0,0,.2);
+    }
+    ::-webkit-scrollbar-track{
+        background: #394a6d;
+    }
+
+    width: 100%;
+    height: calc(100vh - 0px); /* 预留系统logo */
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &-wrapper{
+        width: 100%;
+    }
+
+    &-item{
+        line-height: 45px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &-name{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            color: #bfcbd9;
+
+            &:hover{
+                color: #20a0ff;
+            }
+
+            &>i{
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+            
+
+            &.on{
+                color: #fff;
+                &+.sidebar-sub{ display: block; }
+            }
+        }
+
+        &>.sidebar-sub{
+            background: linear-gradient(45deg, #1f2d3d, transparent);
+            border-left: 2px solid #1b7fbd;
+        }
+    }
+
+    &-sub{
+        display: none;
+        width: 100%;
+
+        &-item{
+            position: relative;
+            padding: 0 20px;
+            line-height: 40px;
+            font-size: 13px;
+
+            &:hover{
+                color: #20a0ff;
+                background-color: #1f2d3d;
+            }
+
+            .sidebar-sub-item{
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    margin-top: -3px;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 2px;
+                    background-color: #fff;
+                }
+            }
+
+            &>a{
+                display: block;
+                height: 100%;
+                color: #bfcbd9;
+
+                &:hover{
+                    color: #20a0ff;
+                }
+            }
+            &>.active{
+                color: #20a0ff;
+            }
+            &>.sidebar-item-name{
+                justify-content: flex-start;
+                padding: 0;
+            }
+        }
+    }
+
+    .nav-icon{
+        margin-right: 8px;
+        font-size: 16px;
+    }
+}
