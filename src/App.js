@@ -14,9 +14,9 @@ class App extends Component {
 					<SideBar />
 				</section>
 				<section className="main">
-					<header className="header">
+					{/* <header className="header">
 						<span className="username">Hi, { this.props.user.lastname }</span>
-					</header>
+					</header> */}
 					<div className="wrapper">
 						<Routers />
 					</div>
