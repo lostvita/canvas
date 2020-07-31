@@ -31,5 +31,30 @@ export default [
       auth: '123',
       component: 'FreeFall'
     }]
+  },
+  {
+    title: 'HTML+CSS可视化',
+    icon: 'icon-money',
+    routes: [{
+      name: '柱状图',
+      path: '/front/hc/histogram',
+      component: 'HcHistogram'
+    }, {
+      name: '饼图',
+      path: '/front/hc/piegraph',
+      component: 'PieGraph'
+    }, {
+      name: '路径裁剪',
+      path: '/front/hc/clip-path',
+      component: 'ClipPath'
+    }]
+  },{
+    title: 'Canvas绘画',
+    icon: 'icon-pic',
+    routes: [{
+      name: '基础图形',
+      path: '/front/canvas/base-shape',
+      component: 'BaseShape'
+    }]
   }
 ]

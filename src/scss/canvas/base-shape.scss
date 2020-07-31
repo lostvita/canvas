@@ -1,0 +1,9 @@
+.base-shape-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.canvas-triangle,.canvas-oval{
+  width: 400px;
+  height: 200px;
+}
